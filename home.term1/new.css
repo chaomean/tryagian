@@ -1,0 +1,86 @@
+h1{
+    text-align: center;
+    background-color: blue;
+    padding: 20px;
+    color: white;
+    margin-top: 25px;
+}
+table{
+    width: 100%;
+}
+table, tr, th, td{
+    border: 1px solid black;
+    color: blue;
+    text-align: left;
+    border-collapse: collapse;
+    padding: 15px;
+    background-color: aqua;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+.container{
+    top: 0;
+    right: 0;
+    left: 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 7%;
+    background-color: beige;
+    box-shadow: 2px 3px 2px black;
+}
+.logo{
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 20px;
+    color: black;
+}
+.logo, .navbar{
+    height: 100%;
+}
+.navbar ul li{
+    position: relative;
+    float:left;  
+}
+.navbar ul li{
+    list-style: none;
+}
+.navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color: black;
+    height: 100%;
+    display: block;
+}
+.navbar ul li a:hover{
+    background-color: blue;
+    color: white;
+}
+.navbar ul li ul {
+    left: 0;
+    width: 210px;
+    background-color: wheat;
+    color: black;
+    position: absolute;
+    display: none;
+}
+.navbar ul li ul li{
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+.navbar ul li ul li ul{
+    top: 0;
+    left: 210px;
+}
+.navbar ul li:focus-within>ul,
+.navbar ul li:hover>ul {
+    display: initial;
+}
